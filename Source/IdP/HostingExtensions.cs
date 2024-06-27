@@ -1,3 +1,4 @@
+using System.Security.Cryptography.X509Certificates;
 using Duende.IdentityServer;
 using IdP;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -20,6 +21,9 @@ internal static class HostingExtensions
 
                 // see https://docs.duendesoftware.com/identityserver/v6/fundamentals/resources/
                 options.EmitStaticAudienceClaim = true;
+
+                options.MutualTls.DomainName = "mtls";
+				options.MutualTls.Enabled = true;
             })
             .AddTestUsers(TestUsers.Users);
 
@@ -43,6 +47,10 @@ internal static class HostingExtensions
 
 
         builder.Services.AddAuthentication()
+	        .AddCertificate(options =>
+	        {
+		        options.RevocationMode = X509RevocationMode.NoCheck;
+	        })
             .AddGoogle(options =>
             {
                 options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;

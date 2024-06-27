@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".certificates", ".certificates", "{770AF5A7-9515-47FE-A6B5-07CA4B3B3361}"
+	ProjectSection(SolutionItems) = preProject
+		.certificates\https.crt = .certificates\https.crt
+		.certificates\https.key = .certificates\https.key
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{45E69D49-8328-4B3E-BA37-B45AB324A9AD}"
 	ProjectSection(SolutionItems) = preProject
