@@ -19,7 +19,7 @@ using Duende.IdentityServer.Templates 7.0.4.
 	- 127.0.0.1 idp.example.local
 	- 127.0.0.2 mtls.idp.example.local
 - [Added nuget-package Microsoft.AspNetCore.Authentication.Certificate](/Source/IdP/IdP.csproj#L11)
-- [MutualTls settings in HostingExtensions.cs](/Source/IdP/HostingExtensions.cs#L24)
+- [MutualTls settings in HostingExtensions.cs](/Source/IdP/HostingExtensions.cs#L25)
 - [Certificate-authentication in HostingExtensions.cs](/Source/IdP/HostingExtensions.cs#L50)
 - [Optional MTLS settings](/Source/IdP/Program.cs#L16)
 
