@@ -22,7 +22,9 @@ internal static class HostingExtensions
                 // see https://docs.duendesoftware.com/identityserver/v6/fundamentals/resources/
                 options.EmitStaticAudienceClaim = true;
 
-                options.MutualTls.DomainName = "mtls";
+                options.IssuerUri = "https://idp.example.local";
+
+                options.MutualTls.DomainName = "mtls.idp.example.local";
 				options.MutualTls.Enabled = true;
             })
             .AddTestUsers(TestUsers.Users);

@@ -87,7 +87,7 @@ Found it here:
 		"dpop_signing_alg_values_supported": [ "RS256", "RS384", "RS512", "PS256", "PS384", "PS512", "ES256", "ES384", "ES512" ]
 	}
 
-### https://mtls.idp.example.local/.well-known/openid-configuration - correct?
+### https://mtls.idp.example.local/.well-known/openid-configuration - correct
 
 	{
 		"issuer": "https://idp.example.local",
@@ -104,10 +104,10 @@ Found it here:
 		"pushed_authorization_request_endpoint": "https://mtls.idp.example.local/connect/par",
 		"require_pushed_authorization_requests": false,
 		"mtls_endpoint_aliases": {
-			"token_endpoint": "https://mtls.mtls.idp.example.local/connect/token",
-			"revocation_endpoint": "https://mtls.mtls.idp.example.local/connect/revocation",
-			"introspection_endpoint": "https://mtls.mtls.idp.example.local/connect/introspect",
-			"device_authorization_endpoint": "https://mtls.mtls.idp.example.local/connect/deviceauthorization"
+			"token_endpoint": "https://mtls.idp.example.local/connect/token",
+			"revocation_endpoint": "https://mtls.idp.example.local/connect/revocation",
+			"introspection_endpoint": "https://mtls.idp.example.local/connect/introspect",
+			"device_authorization_endpoint": "https://mtls.idp.example.local/connect/deviceauthorization"
 		},
 		"frontchannel_logout_supported": true,
 		"frontchannel_logout_session_supported": true,
